@@ -1,6 +1,6 @@
 # Jack WordList Tracker
 jwlt (Jack WordList Tracker) is a wordlist generator inspirited by [crunch](https://sourceforge.net/projects/crunch-wordlist/).
-jwlt allows you to save your current session while you are generating your wordlist. In case your pc turns down, your process closes or other scenario that may interrupt the process.
+jwlt allows you to save your current session while you are generating your wordlist. Even if your pc gets shut down, your process closes or anything else bad happens that may interrupt the process, you wont lose your progress.
 
 ## Compiling
 To compile the program, you need to execute the `compile.sh` script by running:
@@ -39,3 +39,6 @@ In case you want to contribute to this project or you have something to ask, fee
  - [Telegram](https://t.me/jm266)
  - [Twitter](https://twitter.com/jackrendor)
  - [GitLab](https://gitlab.com/jackrendor)
+
+ ## Thank to
+  - [SamBelieve](https://github.com/sambelieve) with the translation
