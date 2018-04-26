@@ -17,7 +17,6 @@ void usage(char *file_name)
 
 int save_progress(int *tracker, int tracker_size)
 {
-  puts("\n\n[+] Progress saved! [+]\n\n");
   // Open file in write mode
   FILE *session = fopen(SESSION_FILENAME, "w");
 
