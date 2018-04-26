@@ -15,7 +15,7 @@ or
 
     su -c "sh install.sh"
 
- 
+
 ## Usage
 
 Two arguments are necessary to run the generator, the third is optional.
@@ -39,4 +39,3 @@ In case you want to contribute to this project or you have something to ask, fee
  - [Telegram](https://t.me/jm266)
  - [Twitter](https://twitter.com/jackrendor)
  - [GitLab](https://gitlab.com/jackrendor)
-
