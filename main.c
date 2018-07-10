@@ -111,7 +111,7 @@ int reload_session(int *tracker, int tracker_size)
   */
   char container[50];
 
-  // Get one line. It's good enought.
+  // Get one line. It's good enough.
   if (fgets(container, (size_t)50, session) == NULL)
     return -1;
 
@@ -193,7 +193,7 @@ int main(int argc, char **argv)
         remove(SESSION_FILENAME);
 
     }else{
-      puts("Ok, I don't know that you meant but take a look at this:");
+      puts("Ok, I don't know that do  you mean but take a look at this:");
       usage(argv[0]);
       return -1;
     }
