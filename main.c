@@ -149,7 +149,7 @@ int main(int argc, char **argv)
   // Arguments check
   if (argc > 4){
     //If you supply more than 3 arguments, let's print out a funny error
-    printf("OK now tell me what I'm suppose to do with this %d extra argument(s)\n", argc-4);
+    fprintf(stderr, "OK now tell me what I'm suppose to do with this %d extra argument(s)\n", argc-4);
     return -4;
 
   } else if(argc == 4){
@@ -158,11 +158,11 @@ int main(int argc, char **argv)
       check if the last two arguments are numbers
     */
     if (!isnumber(argv[2])) {
-      puts("[ERROR] Second argument must be a number.");
+      fprintf(stderr, "[ERROR] Second argument must be a number.\n");
       return -2;
     }
     if (!isnumber(argv[3])) {
-      puts("[ERROR] Third argument must be a number.");
+      fprintf(stderr, "[ERROR] Third argument must be a number.\n");
       return -3;
     }
 
@@ -175,7 +175,7 @@ int main(int argc, char **argv)
       Last argument must be an integer
     */
     if (!isnumber(argv[2])) {
-      puts("[ERROR] Second argument must be a number.");
+      fprintf(stderr, "[ERROR] Second argument must be a number.\n");
       return -2;
     }
 
@@ -192,14 +192,14 @@ int main(int argc, char **argv)
         remove(SESSION_FILENAME);
 
     }else{
-      puts("Ok, I don't know that do  you mean but take a look at this:");
+      fprintf(stderr, "Ok, I don't know that do  you mean but take a look at this:\n");
       usage(argv[0]);
       return -1;
     }
     return 1;
 
   } else {
-    puts("Missing arguments.");
+    fprintf(stderr, "Missing arguments.\n");
     usage(argv[0]);
     return -1;
   }
