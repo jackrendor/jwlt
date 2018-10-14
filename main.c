@@ -222,7 +222,8 @@ int main(int argc, char **argv)
   }
 
   // Reload the last session if found
-  reload_session(tracker, len);
+  if (reload_session(tracker, len) == 1)
+    fprintf(stderr, "Session found and loaded.\n");
 
   // The real trick.
   for (long double i=0; i<combinations; i++, save_counter++){
