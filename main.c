@@ -22,7 +22,6 @@ int save_progress(int *tracker, int tracker_size)
 
   // Check status of file stream
   if (session == NULL){
-    fclose(session);
     return -1;
   }
 
