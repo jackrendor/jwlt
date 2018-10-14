@@ -1,4 +1,7 @@
 # Jack WordList Tracker
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/93b6e5a68b6041329d309f24bf705371)](https://app.codacy.com/app/jackrendor/jwlt?utm_source=github.com&utm_medium=referral&utm_content=jackrendor/jwlt&utm_campaign=Badge_Grade_Settings)
+
 jwlt (Jack WordList Tracker) is a wordlist generator inspirited by [crunch](https://sourceforge.net/projects/crunch-wordlist/).
 jwlt allows you to save your current session while you are generating your wordlist. If your pc turns off or anything else bad happens, jwlt will keep track of the last elements.
 
