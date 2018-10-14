@@ -111,14 +111,16 @@ int reload_session(int *tracker, int tracker_size)
   char container[50];
 
   // Get one line. It's good enough.
-  if (fgets(container, (size_t)50, session) == NULL)
+  if (fgets(container, (size_t)50, session) == NULL){
+    fclose(session);
     return -1;
+  }
 
   // Update the tracker (or index)
   for (int i=0; i<tracker_size; i++){
     tracker[i] = atoi(g_arg(container, i, '-'));
   }
-
+  fclose(session);
   return 1;
 }
 
