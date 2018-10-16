@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -f ./run/jwlt ]; then
-	cp ./run/jwlt /usr/sbin/jwlt
+	cp ./run/jwlt /usr/local/bin/jwlt
 	if [ $? -eq 0 ]; then
 		echo "[+] Installed"
 	else
