@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 
   } else if(argc == 4){
     /*
-      We if the maximum argument was supplied, then
+      If the maximum argument was supplied, then
       check if the last two arguments are numbers
     */
     if (!isnumber(argv[2])) {
