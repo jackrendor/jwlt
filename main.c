@@ -103,4 +103,6 @@ int main(int argc, char **argv)
   }
   // This removes the session file once everything is done.
   remove(SESSION_FILENAME);
+  
+  return 0;
 }
