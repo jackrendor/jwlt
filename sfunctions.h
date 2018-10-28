@@ -28,7 +28,7 @@ char *g_arg(char *string, int argument_pos, char placeholder)
     }
     return tmp;
 }
-int isnumber(char *argument)
+int isnumber(char *arg)
 {
     /*
         Argument checker. I want to be sure
