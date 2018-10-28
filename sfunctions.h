@@ -39,10 +39,10 @@ int isnumber(char *argument)
           otherwise, 0.
   */
 
-  int arg_len = strlen(argument);
-  for (int i=0; i<arg_len; i++){
-    if (!isdigit(argument[i]))
+  while (*arg != '\0'){
+    if (!isdigit(*arg))
       return 0;
+    arg++;
   }
   return 1;
 }
