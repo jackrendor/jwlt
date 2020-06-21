@@ -40,13 +40,11 @@ int main(int argc, char **argv){
         tracker[i] = 0;
     }
 
-    /*std::cerr << "Charset: " << CHARSET << std::endl;
+    std::cerr << "Charset: " << CHARSET << std::endl;
     std::cerr << "Charset lenght: " << C_LEN << std::endl;
     std::cerr << "Password lenght: " << PSWD_LEN << std::endl;
-    std::cerr << "Adiacent check: " << (ADIACENT_CHECK ? "yes" : "no") << std::endl;*/
-    if (args.check_arg("--for", "-F"))
-        for_generator(tracker, CHARSET, PSWD_LEN, C_LEN, ADIACENT_CHECK);
-    else if (args.check_arg("--while", "-W"))
-        while_generator(tracker, CHARSET, PSWD_LEN, C_LEN, ADIACENT_CHECK);
+    std::cerr << "Adiacent check: " << (ADIACENT_CHECK ? "yes" : "no") << std::endl;
+    
+    wordlist_generator(tracker, CHARSET, PSWD_LEN, C_LEN, ADIACENT_CHECK);
 
 }
