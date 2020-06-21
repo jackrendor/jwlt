@@ -8,13 +8,6 @@ size_t strlen(char* s){
     for (r = 0; *s++ != '\0'; r++);
     return r;
 }
-bool end_reached(size_t *tracker, size_t t_len, size_t c_len){
-    for (size_t i=0; i<t_len; i++){
-        if (tracker[i] != c_len-1)
-            return false;
-    }
-    return true;
-}
 
 void increase(size_t *tracker, size_t t_len, size_t c_len){
     for (size_t i=0; i<t_len; i++){
