@@ -27,9 +27,15 @@ int main(int argc, char **argv){
     }
     
 
-    size_t PSWD_LEN = atoi(args.get_value("--lenght", "-l"));
-    if (PSWD_LEN <=0){
+    
+    if ( !args.check_arg("--lenght", "-l")){
         std::cerr << "Missing argument value for --lenght/-l\n";
+        return -1;
+    }
+
+    int PSWD_LEN = atoi(args.get_value("--lenght", "-l"));
+    if (PSWD_LEN <= 0){
+        std::cerr << "--lenght/-l value must be greater than 0.\n";
         return -1;
     }
     
