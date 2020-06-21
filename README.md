@@ -1,5 +1,6 @@
 # Jack WordList Tracker
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/93b6e5a68b6041329d309f24bf705371)](https://app.codacy.com/manual/jackrendor/jwlt?utm_source=github.com&utm_medium=referral&utm_content=jackrendor/jwlt&utm_campaign=Badge_Grade_Dashboard)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/93b6e5a68b6041329d309f24bf705371)](https://app.codacy.com/app/jackrendor/jwlt?utm_source=github.com&utm_medium=referral&utm_content=jackrendor/jwlt&utm_campaign=Badge_Grade_Settings)
 
 jwlt (Jack WordList Tracker) is a wordlist generator inspirited by [crunch](https://sourceforge.net/projects/crunch-wordlist/).
