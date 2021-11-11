@@ -14,13 +14,13 @@ bash compile.sh
 ## Install
 Run the `install.sh` script.
 ```sh
-sudo bash compile.sh
+sudo bash install.sh
 ```
 
 or
 
 ```sh
-su -c "bash compile.sh"
+su -c "bash install.sh"
 ```
 
 ## Usage
